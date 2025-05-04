@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - [Nama Perusahaan Anda]</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Anda bisa menambahkan custom CSS di sini jika diperlukan */
+        body {
+            font-family: 'Inter', sans-serif; /* Contoh penggunaan font, pastikan font tersedia */
+        }
+        /* Menambahkan sedikit animasi fade-in (opsional) */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation ease 1s forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Menambahkan delay animasi untuk elemen berbeda */
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="fixed bg-white w-screen py-1.5 px-3 flex justify-between shadow-md z-50 md:pr-10 pl-5 lg:pr-14 lg:pl-8">
+            <a href="https://g.co/kgs/56s12JJ" class="flex justify-center items-center">
+            <img src="./Img/logo.png" alt="logo" class="w-10 h-10" />
+            <p class="text-lg text-blue-600 font-semibold">SUMBER BENING</p>
+            </a>
+          <menu type="toolbar" class="hidden flex flex-col space-y-5 absolute mt-11 py-3 px-5 text-gray-700 items-center text-center bg-white shadow-md w-screen left-0 md:flex md:flex-row md:space-y-0 md:space-x-4 md:static md:w-auto md:mt-0 md:py-0 md:px-0 md:shadow-none" id="menu">
+            <a href="Index.html" onclick="closeNav()" class="hover:text-blue-600 duration-300">Home</a>
+            <a href="#" onclick="closeNav()" class="hover:text-blue-600 duration-300">About</a>
+            <a href="Index.html#product" onclick="closeNav()" class="hover:text-blue-600 duration-300">Product</a>
+            <a href="Index.html#contact" onclick="closeNav()" class="hover:text-blue-600 duration-300">Contact</a>
+          </menu>
+          <button class="text-gray-700 md:hidden" id="btn-menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+           </svg>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="tentang-kami" class="mb-16 mt-8 fade-in">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tentang Kami</h1>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        SUMBER BENING adalah sebuah usaha yang bergerak di bidang penyediaan air minum isi ulang berkualitas tinggi. Dengan komitmen untuk menyediakan air yang bersih, sehat, dan terjangkau, SUMBER BENING menjadi solusi bagi masyarakat yang peduli dengan kesehatan dan kebutuhan air minum harian. Usaha ini dilengkapi dengan teknologi pengolahan air canggih, termasuk sistem filtrasi dan ozonisasi, yang memastikan setiap tetes air yang disajikan memenuhi standar kualitas tertinggi.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="./Img/about1.webp" alt="mesin isi ulang" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                     </div>
+            </div>
+        </section>
+
+        <section id="sejarah" class="mb-16 bg-white p-8 rounded-lg shadow-md fade-in delay-1">
+             <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                 <div class="w-full md:w-3/4 lg:w-1/2">
+                    <h2 class="text-3xl md:text-3xl font-bold text-gray-900 mb-4">Sejarah Singkat</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4 text-lg">
+                        SUMBER BENING berawal dari kesadaran akan kebutuhan dasar setiap individu akan air minum yang bersih dan sehat. Di tengah kenyataan bahwa tidak semua orang memiliki akses mudah dan terjangkau terhadap air yang aman untuk dikonsumsi, muncul keinginan untuk menyediakan solusi yang dapat menjawab kebutuhan ini. SUMBER BENING hadir dengan misi menyediakan air minum berkualitas tinggi, yang diolah menggunakan teknologi canggih untuk memastikan setiap tetesnya murni dan menyehatkan.
+                    </p>
+                </div>
+                 <div class="w-full lg:rotate-0 lg:w-1/2 lg:-left-5 md:w-1/2 md:absolute md:-z-10 md:rotate-12 md:-left-1/4">
+                    <img src="./Img/toko.webp" alt="toko sumber bening" class="rounded-lg shadow-md w-full h-auto object-cover">
+                     </div>
+            </div>
+        </section>
+
+        <section id="visi-misi" class="mb-16 fade-in delay-2">
+            <div class="text-center mb-10">
+                 <h2 class="text-3xl font-bold text-gray-900">Visi & Misi Kami</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div class="bg-blue-100 p-6 rounded-lg shadow fade-in delay-3">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Visi</h3>
+                    <p class="text-blue-600 leading-relaxed text-lg">
+                        Menjadi penyedia air minum berkualitas tinggi yang terpercaya nomor 1 Mojokerto.
+                    </p>
+                </div>
+                <div class="bg-green-100 p-6 rounded-lg shadow fade-in delay-4">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Misi</h3>
+                    <ul class="list-disc list-inside text-green-700 leading-relaxed space-y-2 text-lg">
+                        <li>Menyediakan air minum dengan standar kualitas terbaik melalui proses penyaringan dan pengolahan yang canggih, serta memastikan kebersihan dan keamanan di setiap tahapan produksi.</li>
+                        <li>Menawarkan harga yang kompetitif dan transparan, sehingga semua lapisan masyarakat dapat menikmati air minum berkualitas tanpa harus mengeluarkan biaya yang tinggi.</li>
+                        <li>Memberikan layanan pelanggan yang ramah, cepat, dan responsif, termasuk pengiriman tepat waktu dan kemudahan dalam pemesanan</li>
+                         </ul>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+        <footer class="bg-black text-white flex flex-col p-8 space-y-3 mt-16  md:flex-row md:justify-around md:space-y-0">
+            <div class="">
+            <h3 class="text-2xl font-bold mb-1">Sumber bening</h3>
+            <p class="text-lg">Depot Air Minum Isi Ulang</p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-2xl font-bold mb-1">Company</h3>
+            <a href="#home" class="hover:text-blue-600 duration-300">Home</a>
+            <a href="#" class="hover:text-blue-600 duration-300">About</a>
+            <a href="Index.html#product" class="hover:text-blue-600 duration-300">Product</a>
+            <a href="Index.html#contact" class="hover:text-blue-600 duration-300">Contact</a>
+          </div>
+          <div class="">
+            <h3 class="text-2xl font-bold mb-2">Ikuti Kami</h3>
+            <a href="https://wa.me/6285100215097" class="fa-solid fa-phone text-xl mr-2 hover:text-blue-800 duration-300"></a>
+          </div>
+          </footer>
+          <div class="bg-black text-white p-6">
+            <p class="border-t border-gray-800 text-center pt-6">© <span id="current-year"></span> Sumber Bening. All right reserved.</p>
+          </div>
+          <a href="#"><button id="backBtn" class="fixed opacity-0 bottom-5 right-5 text-xl bg-blue-600 w-10 h-10 text-white rounded-full z-50 shadow hover:bg-blue-800 transition-all ease-in-out duration-500"><i class="fa-solid fa-arrow-up"></i></button></a>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const btnMenu = document.getElementById('btn-menu')
+  const menu = document.getElementById('menu')
+  const backbtn = document.getElementById('backBtn')
+
+  function closeNav () {
+    menu.classList.add('hidden')
+  }
+
+  btnMenu.addEventListener("click", () => {
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden')
+    } else {
+      menu.classList.add('hidden')
+    }
+  })
+
+ window.addEventListener('scroll', () => {
+
+ if (window.scrollY > 300) {
+  backbtn.classList.remove('opacity-0')
+  backbtn.classList.add('opacity-100')
+ }else {
+  backbtn.classList.remove('opacity-100')
+ backbtn.classList.add('opacity-0')
+ }
+ })
+    </script>
+
+</body>
+</html>
